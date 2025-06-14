@@ -11,7 +11,5 @@ export interface AdventureNode {
 export interface Adventure {
   title: string;
   startNodeId: string;
-  nodes: {
-    [key: string]: AdventureNode;
-  };
+  nodes: AdventureNode[];
 } 

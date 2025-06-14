@@ -1,10 +1,5 @@
-import AdventureEngine from '@/components/AdventureEngine';
-import sampleAdventure from '@/data/sample-adventure.json';
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return (
-    <main className="min-h-screen bg-gray-100 py-8">
-      <AdventureEngine adventure={sampleAdventure} />
-    </main>
-  );
+  redirect('/adventures');
 }
